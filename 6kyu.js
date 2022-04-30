@@ -1,6 +1,14 @@
+//Persistent Bugger.
+const persistence=(num) => {
+    let x = 0;
+    while (num.toString().length !== 1){
+        num = num.toString().split('').reduce((acc, d) =>  acc * d)
+        x ++
+    } return x
+}
+
 // Sum of Digits / Digital Root
 const digital_root = (n) => n < 10 ? n : digital_root(n.toString().split('').reduce((acc, d) =>  acc + +d, 0))
-
 
 // Array.diff
 const arrayDiff = (a, b) => {
