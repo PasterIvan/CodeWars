@@ -1,3 +1,9 @@
+//Remove First and Last Character
+const removeChar=(str)=>str.slice(1, str.length-1)
+
+//Return Negative
+const makeNegative=(num)=> num>0 ? num*(-1):num
+
 // Opposite number
 const opposite = (number) => number*(-1)
 

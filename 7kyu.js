@@ -1,3 +1,6 @@
+//Descending Order
+const descendingOrder=(n)=> Number(n.toString(10).split('').map(int => parseInt(int, 10)).sort(( a, b ) =>  b - a).join(''))
+
 // You're a square!
 const isSquare=(n)=>Number.isInteger(Math.sqrt(n))
 
