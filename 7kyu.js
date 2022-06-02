@@ -1,3 +1,11 @@
+//Mumbling
+const accum=(s)=> s.split('').map((x, i) => (x.toUpperCase() + x.toLowerCase().repeat(i))).join('-')
+
+//Jaden Casing Strings
+String.prototype.toJadenCase = function () {
+    return this.split(' ').map(x=>x[0].toUpperCase() + x.slice(1)).join(' ')
+};
+
 //Descending Order
 const descendingOrder=(n)=> Number(n.toString(10).split('').map(int => parseInt(int, 10)).sort(( a, b ) =>  b - a).join(''))
 
