@@ -1,3 +1,6 @@
+//Shortest Word
+const findShort=(s)=>s.split(" ").sort((a,b)=>a.length<b.length?-1:+1)[0].length
+
 //Mumbling
 const accum=(s)=> s.split('').map((x, i) => (x.toUpperCase() + x.toLowerCase().repeat(i))).join('-')
 
