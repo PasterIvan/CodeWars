@@ -1,3 +1,8 @@
+//Find the smallest integer in the array
+class SmallestIntegerFinder {
+    findSmallestInt(args) {return Math.min.apply(null, args)}
+}
+
 //Reversed Strings
 const solution=(str)=>str.split("").reverse().join("")
 

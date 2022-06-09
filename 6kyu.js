@@ -1,3 +1,9 @@
+//Replace With Alphabet Position
+const alphabetPosition=(text)=> text.toLowerCase().split('')
+    .filter( c => c >= 'a' & c <= 'z' )
+    .map( c => c.charCodeAt(0) - 'a'.charCodeAt(0) + 1)
+    .join(' ');
+
 //Persistent Bugger.
 const persistence=(num) => {
     let x = 0;
