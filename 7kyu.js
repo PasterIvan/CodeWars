@@ -6,7 +6,6 @@ const DNAStrand=(dna)=>dna.split('').map(a=>{
         if (a==='G'){return 'C'}
     }).join('')
 
-
 //Shortest Word
 const findShort=(s)=>s.split(" ").sort((a,b)=>a.length<b.length?-1:+1)[0].length
 
