@@ -1,3 +1,9 @@
+//Sum of two lowest positive integers
+const sumTwoSmallestNumbers= (numbers) => {
+    let arr = numbers.sort((a,b)=>a-b)
+    return arr[0]+arr[1]
+}
+
 //Complementary DNA
 const DNAStrand=(dna)=>dna.split('').map(a=>{
         if (a==='A'){return 'T'}
