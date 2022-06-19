@@ -1,3 +1,6 @@
+//Beginner Series #3 Sum of Numbers
+const getSum=(a,b)=> a!==b ? a+b : a
+
 //Sum of two lowest positive integers
 const sumTwoSmallestNumbers= (numbers) => {
     let arr = numbers.sort((a,b)=>a-b)

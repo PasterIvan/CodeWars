@@ -1,3 +1,6 @@
+//Remove String Spaces
+const noSpace=(x)=> x.split('').filter(y=>y!==' ').join('')
+
 //Find the smallest integer in the array
 class SmallestIntegerFinder {
     findSmallestInt(args) {return Math.min.apply(null, args)}
