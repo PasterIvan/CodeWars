@@ -1,3 +1,19 @@
+//Snail
+const snail = (array) =>{
+    let newArray = []
+    while(array.length){
+        newArray.push(...array.shift())
+        for (var i = 0; i < array.length; i++){
+            newArray.push(array[i].pop())
+        }
+        newArray.push(...(array.pop() || []).reverse())
+        for (var i = array.length -1; i >= 0; i--){
+            newArray.push(array[i].shift())
+        }
+    }
+    return newArray
+}
+
 // Human readable duration format
 function formatDuration (seconds) {
     let y = Math.floor(seconds / 31536000)
