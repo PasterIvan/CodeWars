@@ -1,3 +1,15 @@
+//Counting sheep...
+const countSheeps=a=>a.filter(x=>x).length
+
+//Grasshopper - Summation
+const summation = (num) => {
+    let a=0
+    for (let i=1; i<=num; i++){
+        a+=i
+    }
+    return a
+}
+
 //Remove String Spaces
 const noSpace=(x)=> x.split(' ').join('')
 

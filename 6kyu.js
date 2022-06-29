@@ -1,3 +1,26 @@
+//Unique In Order
+var uniqueInOrder = function(iterable) {
+    var arr = [];
+    for (var i=0;i<iterable.length;i++) {
+        iterable[i] !== iterable[i+1] ? arr.push(iterable[i]) : arr
+    }
+    return arr;
+}
+
+//Take a Ten Minutes Walk
+const isValidWalk = (walk) => {
+    if (walk.length == 10) {
+        let a = 0
+        let b = 0
+        for (let i=0; i<=walk.length; i++){
+            if (walk[i] === 'n'){a+=1}
+            else if (walk[i] === 's'){a-=1}
+            else if (walk[i] === 'w'){b+=1}
+            else if (walk[i] === 'e'){b-=1}
+        }
+        return a==0 && b==0}
+}
+
 //Replace With Alphabet Position
 const alphabetPosition=(text)=> text.toLowerCase().split('')
     .filter( c => c >= 'a' & c <= 'z' )
