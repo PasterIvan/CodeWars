@@ -1,3 +1,12 @@
+//Find the unique number
+const findUniq = (arr) => {
+    let a = arr[0]
+    let b = Number(arr.filter(q=>q!==a).join())
+    let newArrA = arr.filter(x=>x===a)
+    let newArrB = arr.filter(y=>y===b)
+    return newArrA.length == 1 ? newArrA[0] : newArrB[0]
+}
+
 //Unique In Order
 var uniqueInOrder = function(iterable) {
     var arr = [];
