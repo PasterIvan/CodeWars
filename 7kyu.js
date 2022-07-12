@@ -1,4 +1,21 @@
 //Beginner Series #3 Sum of Numbers
+const getSum = (a,b) => {
+    let c = 0
+    if (a<b) {
+        for (; a <= b; a++){
+            c += a;
+        } return c
+    } else if (a>b){
+        for (; b <= a; b++){
+            c += b;
+        } return c
+    }
+    else {
+        return a
+    }
+}
+
+//Beginner Series #3 Sum of Numbers
 const getSum=(a,b)=> a!==b ? a+b : a
 
 //Sum of two lowest positive integers
